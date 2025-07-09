@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  code-server:
+  - apiVersion: v2
+    appVersion: 4.99.4
+    created: "2025-07-09T10:21:53.396362357Z"
+    description: A Helm chart for coder/code-server
+    digest: 855be6b03f57e5e3a01490cebc23e75f3c874d51071ae52349c11d9c2fd7ab79
+    name: code-server
+    type: application
+    urls:
+    - code-server-3.26.4.tgz
+    version: 3.26.4
+generated: "2025-07-09T10:21:53.396372175Z"
