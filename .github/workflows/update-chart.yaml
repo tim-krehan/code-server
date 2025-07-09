@@ -1,23 +1,23 @@
 name: Update Helm Chart
 
 on:
-  workflow_dispatch:
-    inputs:
-      tag:
-        description: 'Tag to sync from coder/code-server'
-        required: true
-        default: 'v4.101.0'
+  push:
+    branches:
+      - main
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      CODER_VERSION: 'v4.101.0'
+
     steps:
       - name: Checkout target repo
         uses: actions/checkout@v3
 
       - name: Clone source repo
         run: |
-          git clone --depth 1 --branch ${{ github.event.inputs.tag }} https://github.com/coder/code-server.git source
+          git clone --depth 1 --branch $CODER_VERSION https://github.com/coder/code-server.git source
 
       - name: Copy helm-chart folder
         run: |
