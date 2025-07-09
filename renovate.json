@@ -7,7 +7,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["update-chart.yaml"],
+      "managerFilePatterns": ["/update-chart.yaml$/"],
       "matchStrings": [
         "\\s*#\\s*(?<datasource>[^:]+):(?<depName>[\\w\\-\\/]+)[\\n\\s]+\\w+_VERSION: '(?<currentValue>v[\\d\\.]+)'"
       ],
