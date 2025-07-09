@@ -13,6 +13,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
+      # github-releases: coder/code-server
       CODER_VERSION: 'v4.100.0'
 
     steps:
