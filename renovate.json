@@ -9,7 +9,7 @@
       "customType": "regex",
       "managerFilePatterns": ["/update-chart.yaml$/"],
       "matchStrings": [
-        "\\s*#\\s*(?<datasource>[^:]+):(?<depName>[\\w\\-\\/]+)[\\n\\s]+\\w+_VERSION: '(?<currentValue>v[\\d\\.]+)'"
+        "\\s*#\\s*(?<datasource>[^:]+): (?<depName>[\\w\\-\\/]+)[\\n\\s]+\\w+_VERSION: '(?<currentValue>v[\\d\\.]+)'"
       ],
       "versioningTemplate": "semver"
     }
