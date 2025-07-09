@@ -6,7 +6,11 @@ on:
       - main
 
 jobs:
+
   sync:
+    permissions:
+      contents: write
+
     runs-on: ubuntu-latest
     env:
       CODER_VERSION: 'v4.101.0'
