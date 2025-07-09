@@ -1,0 +1,35 @@
+name: Update Helm Chart
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to sync from coder/code-server'
+        required: true
+        default: 'v4.101.0'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repo
+        uses: actions/checkout@v3
+
+      - name: Clone source repo
+        run: |
+          git clone --depth 1 --branch ${{ github.event.inputs.tag }} https://github.com/coder/code-server.git source
+
+      - name: Copy helm-chart folder
+        run: |
+          rm -rf charts
+          mkdir -p charts
+          cp -r source/ci/helm-chart charts/code-server
+          rm -rf source
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add charts
+          git commit -m "Update helm-chart to tag ${{ github.event.inputs.tag }}" || echo "No changes to commit"
+          git push
