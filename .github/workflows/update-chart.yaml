@@ -41,5 +41,5 @@ jobs:
           git push
           git fetch --prune --prune-tags --all
           git tag --list
-          git tag -a $CODER_VERSION -m "Version $CODER_VERSION release"
-          git push origin $CODER_VERSION
+          git tag -a $CODER_VERSION -m "Version $CODER_VERSION release" || echo "tag allready present"
+          git push origin $CODER_VERSION || echo "No need to push"
