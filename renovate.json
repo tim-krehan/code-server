@@ -3,6 +3,7 @@
   "extends": [
     "config:recommended"
   ],
+  "ignoreDeps": ["codercom/code-server"],
   "customManagers": [
     {
       "customType": "regex",
