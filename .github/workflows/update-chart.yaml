@@ -32,10 +32,13 @@ jobs:
 
       - name: Commit and push changes
         run: |
+          set -ex;
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add charts
           git commit -m "Update helm-chart to tag $CODER_VERSION" || echo "No changes to commit"
           git push
-          git tag $CODER_VERSION
+          git fetch --prune --prune-tags --all
+          git tag --list
           git tag -a $CODER_VERSION -m "Version $CODER_VERSION release"
+          git push origin $CODER_VERSION
