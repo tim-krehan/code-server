@@ -6,7 +6,7 @@
   "ignoreTests": true,
   "automerge": true,
   "assignees": [
-    "github@timkrehan.de"
+    "tim-krehan"
   ],
   "ignoreDeps": ["codercom/code-server"],
   "customManagers": [
