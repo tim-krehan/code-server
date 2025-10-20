@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # github-releases: coder/code-server
-      CODER_VERSION: 'v4.105.0'
+      CODER_VERSION: 'v4.105.1'
 
     steps:
       - name: Checkout target repo
