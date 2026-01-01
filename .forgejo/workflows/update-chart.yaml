@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents: write
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
       # github-releases: coder/code-server
       CODER_VERSION: 'v4.107.0'
@@ -34,8 +34,8 @@ jobs:
       - name: Commit and push changes
         run: |
           set -ex;
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "Forgejo Actions"
+          git config user.email "actions@git.kr-t.de"
           git add charts
           git commit -m "Update helm-chart to tag $CODER_VERSION" || echo "No changes to commit"
           git push
