@@ -14,7 +14,7 @@ jobs:
     runs-on: self-hosted
     env:
       # github-releases: coder/code-server
-      CODER_VERSION: 'v4.107.0'
+      CODER_VERSION: 'v4.106.3'
 
     steps:
       - name: Checkout target repo
