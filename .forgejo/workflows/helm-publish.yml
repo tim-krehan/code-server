@@ -21,11 +21,6 @@ jobs:
       - name: Set up Helm
         uses: azure/setup-helm@v4.3.1
 
-      - name: Configure Git
-        run: |
-          git config user.name "$GITHUB_ACTOR"
-          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-
       - name: Create Helm Chart
         run: |
           set -euo pipefail
@@ -44,8 +39,8 @@ jobs:
           echo "Generating Helm repo index with URL $URL"
           helm repo index . --url "$URL"
           echo "Configuring git user"
-          git config user.name "forgejo-actions[bot]"
-          git config user.email "forgejo-actions[bot]@users.noreply.git.kr-t.de"
+          git config user.name "Forgejo Actions"
+          git config user.email "actions@git.kr-t.de"
           echo "Adding changes to git"
           git add .
           echo "Committing changes"
