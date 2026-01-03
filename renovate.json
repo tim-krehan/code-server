@@ -8,7 +8,9 @@
   "assignees": [
     "tim-krehan"
   ],
-  "ignoreDeps": ["codercom/code-server"],
+  "ignoreDeps": [
+    "codercom/code-server"
+  ],
   "customManagers": [
     {
       "customType": "regex",
