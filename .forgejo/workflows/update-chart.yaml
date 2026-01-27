@@ -75,4 +75,3 @@ jobs:
           echo "Pushing gh-pages branch"
           git push origin gh-pages
           echo "Helm chart publish workflow completed"
-
