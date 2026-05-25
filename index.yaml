@@ -9,7 +9,7 @@ entries:
     name: code-server
     type: application
     urls:
-    - https://git.kr-t.de/tim/code-server/raw/branch/gh-pages/code-server-3.35.0.tgz
+    - https://tim-krehan.github.io/code-server/code-server-3.35.0.tgz
     version: 3.35.0
   - apiVersion: v2
     appVersion: 4.114.1
@@ -19,7 +19,7 @@ entries:
     name: code-server
     type: application
     urls:
-    - https://git.kr-t.de/tim/code-server/raw/branch/gh-pages/code-server-3.34.0.tgz
+    - https://tim-krehan.github.io/code-server/code-server-3.34.0.tgz
     version: 3.34.0
   - apiVersion: v2
     appVersion: 4.109.5
@@ -29,7 +29,7 @@ entries:
     name: code-server
     type: application
     urls:
-    - https://git.kr-t.de/tim/code-server/raw/branch/gh-pages/code-server-3.33.0.tgz
+    - https://tim-krehan.github.io/code-server/code-server-3.33.0.tgz
     version: 3.33.0
   - apiVersion: v2
     appVersion: 4.108.0
@@ -39,7 +39,7 @@ entries:
     name: code-server
     type: application
     urls:
-    - https://git.kr-t.de/tim/code-server/raw/branch/gh-pages/code-server-3.32.1.tgz
+    - https://tim-krehan.github.io/code-server/code-server-3.32.1.tgz
     version: 3.32.1
   - apiVersion: v2
     appVersion: 4.108.0
@@ -49,7 +49,7 @@ entries:
     name: code-server
     type: application
     urls:
-    - https://git.kr-t.de/tim/code-server/raw/branch/gh-pages/code-server-3.32.0.tgz
+    - https://tim-krehan.github.io/code-server/code-server-3.32.0.tgz
     version: 3.32.0
   - apiVersion: v2
     appVersion: 4.104.0
