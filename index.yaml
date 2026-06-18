@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   code-server:
   - apiVersion: v2
+    appVersion: 4.124.2
+    created: "2026-06-18T07:12:35.546164397Z"
+    description: A Helm chart for coder/code-server
+    digest: 7f7c481fb6c44274f6f3088109418816497b57fa1a7657cfd79a3c76189f81f7
+    name: code-server
+    type: application
+    urls:
+    - code-server-3.39.0.tgz
+    version: 3.39.0
+  - apiVersion: v2
     appVersion: 4.123.0
     created: "2026-06-16T16:57:19.504623243Z"
     description: A Helm chart for coder/code-server
@@ -181,4 +191,4 @@ entries:
     urls:
     - https://tim-krehan.github.io/code-server/code-server-3.26.4.tgz
     version: 3.26.4
-generated: "2026-06-16T16:57:19.50473987Z"
+generated: "2026-06-18T07:12:35.546297968Z"
